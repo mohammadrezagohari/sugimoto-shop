@@ -9,7 +9,7 @@ function Product(props: IProduct) {
     // typeof(image)==Array ? image[0] : image
     return (
         // <div className="flex flex-wrap lg:w-[18%] md:w-[25%] w-[45%] bg-white text-black m-2 p-2 rounded-lg">
-        <div className="flex flex-wrap  bg-white text-black m-2 p-2 rounded-lg">
+        <div className="flex flex-wrap  bg-white text-black dark:bg-sky-900 dark:text-white m-2 p-2 rounded-lg">
             <Link href={`/products/${id}/${slug}`} className="flex justify-center w-full p-2">
                 <Image src={mainImage} alt={title} width={150} height={150} className="w-full" />
             </Link>
@@ -18,7 +18,7 @@ function Product(props: IProduct) {
             </Link>
             <div className="flex w-full">
                 <div className="w-[50%] flex justify-start">
-                    <button className="bg-[#F3A51D] p-1 rounded-lg border border-black">
+                    <button className="bg-[#F3A51D] hover:bg-white p-1 rounded-lg border border-black">
                         <Image src={BasketIcon} alt={title} width={25} height={25} />
                     </button>
                 </div>
