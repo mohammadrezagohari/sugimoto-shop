@@ -1,4 +1,8 @@
 export default interface IPassword {
-  isLoading: boolean;
-  isShowText: boolean;
+    placeHolder: string;
+    value: string;
+    onChange: (e: any) => void;
+    styles: object;
+    className: string;
+    rounded: boolean;
 }

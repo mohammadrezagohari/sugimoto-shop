@@ -1,20 +1,32 @@
-import type { Config } from "tailwindcss";
+/** @type {import('tailwindcss').Config} */
 
-const config: Config = {
-  content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
-  theme: {
-    extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
+module.exports = {
+    content: [
+        './src/**/*.{js,ts,jsx,tsx,mdx}',
+        "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
+        // or you can use a glob pattern (multiple component styles)
+        './node_modules/@nextui-org/theme/dist/components/(button|snippet|code|input).js'
+
+    ],
+    // theme: {
+    //     extend: {},
+    // },
+    theme: {
+
+        screens: {
+            sm: '480px',
+            md: '768px',
+            lg: '976px',
+            xl: '1440px',
+        },
+
+        fontFamily: {
+            sans: ['Yekan-Bakh', 'sans-serif'],
+            // serif: ['Merriweather', 'serif'],
+        },
+        extend: {},
+
     },
-  },
-  plugins: [],
-};
-export default config;
+    darkMode: "class",
+    plugins: [],
+}

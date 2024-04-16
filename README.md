@@ -1,36 +1,101 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# رابط کاربری فروشگاه ساعت کوک توسط محمدرضا گوهری
 
-## Getting Started
+این پروژه یک فروشگاه آنلاین به زبان TypeScript و با فریمورک Next.js پیاده سازی شده است.
 
-First, run the development server:
+## ابزارها و تکنولوژی‌ها
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Next.js**
+- **TypeScript**
+- **ESLint** و **Prettier** برای بهینه‌سازی کد
+- **Storybook** برای داکیومنت‌کردن کامپوننت‌ها
+- **Husky** برای اجرای تست‌ها قبل از ارسال به گیت
+
+ ### فرایند lint کردن خودکار هنگام کامیت با husky انجام می شود ولی اگر به صورت دستی نیاز به این فرایند دارید از دستور زیر استفاده نمایید: 
+
+``` bash
+pnpm run lint
+```
+یا
+``` bash
+npm run lint
+```
+ یا
+```
+yarn run lint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Components Documentation 
+از طریق پورت 6006 داکیومنت ها برایتان نمایش داده می شود.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+``` bash
+pnpm run storybook
+```
+یا
+``` bash
+npm run storybook
+```
+ یا
+```
+yarn run storybook
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## نصب و اجرا
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+برای نصب پروژه، ابتدا از طریق Git آن را clone کنید. سپس دستور زیر را اجرا کنید:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+``` bash
+pnpm install
+```
+یا
+``` bash
+npm install
+```
+ یا
+```
+yarn install
+```
+####  دقت کنید با استفاده از pnpm سرعت نصب بالاتری برخوردارید*
 
-## Deploy on Vercel
+سپس برای اجرای پروژه، از دستور زیر استفاده کنید:
+``` bash
+pnpm run dev
+```
+```
+npm run dev
+```
+```
+yarn dev
+```
+سپس برای اجرای خروجی نهایی، از دستور زیر استفاده کنید:
+``` bash
+pnpm run build
+```
+```
+npm run build
+```
+```
+yarn build
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## راهنمای مشارکت
+<div dir="rtl">
+ما از مشارکت‌های شما بسیار خوشحال خواهیم شد. برای مشارکت، لطفا مراحل زیر را دنبال کنید:
+
+
+1. Fork کنید این مخزن
+2. یک برنچ جدید برای تغییرات خود بسازید (git checkout -b feature/جدید)
+3. کدها را تغییر دهید
+4. تغییرات خود را commit کنید (git commit -am 'افزودن امکان ...')
+5. برنچ خود را push کنید (git push origin feature/جدید)
+6. یک pull request ایجاد کنید
+
+ما تازه‌ترین تغییرات شما را مرور و ادغام خواهیم کرد.
+</div>
+
+
+## لایسنس
+
+این پروژه تحت مجوز MIT منتشر شده است. برای اطلاعات بیشتر، [اینجا](LICENSE) را مشاهده کنید.
